@@ -1,0 +1,9 @@
+Platform,Well,Downtime Category,Start Date,End Date,Primary,Secondary,Downtime Type,Remark,Way Forward,Status
+Tapis,TAC26L,Unplanned Downtime,2020-01-01,2020-01-06,Well,W2: Well Conditions,Tripped,TaC-26L shut-in after confirmed leaks point below ScSSV. ,Manage to flow well naturally. In plan for TaC WW campaign in 2Q,Closed
+Tapis,TAC04L,Unplanned Downtime,2020-02-11,2020-02-11,Well,W2: Well Conditions,Tripped,"Wells downtime i.e C-4L hilo pilot tripped, TaE wells SCSSV tripped",Revised HiLo pilot settings. Well curently flowimg,Closed
+Tapis,TAC04L,Unplanned Downtime,2020-02-20,2020-02-21,Well,W2: Well Conditions,Tripped,"Wells downtime i.e C-4L hilo pilot tripped, TaE wells SCSSV tripped",Revised HiLo pilot settings. Well curently flowimg,Closed
+Tapis,TAC04L,Unplanned Downtime,2020-02-25,2020-02-25,Well,W2: Well Conditions,Tripped,"Wells downtime i.e C-4L hilo pilot tripped, TaE wells SCSSV tripped",Revised HiLo pilot settings. Well curently flowimg,Closed
+Tapis,TAC13L,Unplanned Downtime,2021-08-26,2021-08-31,Well,W2: Well Conditions,Tripped,TaC-13L s/in since 26 August d/t one way passing @ ScSSV control line,Well currently SI due CL pumping away,Open
+Tapis,TAC13L,UPD,2022-01-01,2022-01-31,Well,W2: Well Conditions,UPD4: Others,TaC-13L after two way leak SCSSV control line rectified. ,-,Closed
+Tapis,TAC16U,UPD,2022-04-01,2022-04-30,Well,W2: Well Conditions,UPD4: Others,TaC-16U remain s/in d/t SCSSV failed leak test ,Removed from SDC. Plan for Wellwork intervention,Closed
+Tapis,TAC16U,UPD,2022-05-01,2022-05-31,Well,W2: Well Conditions,UPD4: Others,TaC-16U remain s/in d/t SCSSV failed leak test ,Recitified. Currently flowing,Closed
