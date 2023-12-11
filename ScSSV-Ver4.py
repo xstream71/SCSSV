@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-import openpyxl
-import plotly.figure_factory as ff
+#import openpyxl
+#import plotly.figure_factory as ff
 import os
 # from tqdm import tqdm  # progress bar is activated when there is a loop
 # from tqdm import tqdm_gui
@@ -164,8 +164,8 @@ if status == "Visualisation":
         listwell3 = []
         
        
-        root_path = 'C:/Users/user/SCSSV/'
-        bd_final = pd.read_csv(root_path +"bd_Final_Dulang.csv" )
+        #root_path = 'C:/Users/user/SCSSV/'
+        bd_final = pd.read_csv("bd_Final_Dulang.csv" )
         bd_pred_final = pd.read_csv("bd_pred_final_dulang.csv")
     
     
