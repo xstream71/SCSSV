@@ -426,34 +426,42 @@ if status == "Visualisation":
             form2.line_chart( bd_pred_pi[['THP','THT','PCP','Date']], x ='Date', y=['THP','THT','PCP'])
             form2.write(f" :blue[UPD Data for {wellnameselecttapis}]")
             form2.line_chart(date_selection2[['Date','StatusUPD']], x ='Date', y=['StatusUPD'], color="#38B09D")
-            DF = pd.DataFrame()
-            for i in range (wellnameT.shape[1]):
-         
-                data = wellnameselect1.iloc[i]
-                L =data.str.split(" ", n=1)
-                wellname = L[0]
-                Dates = wellname[1].split("  ")
-                mydf = {}
-                mydf[wellname[0]]= Dates
-                df = pd.DataFrame(mydf)
-                DF = pd.concat([DF, df], sort = False, axis=1)
-            DF.reset_index(drop=True, inplace= True)
-            # st.dataframe(DF)
-            DF.to_csv("UPD_Dates_TapisC.csv", index=False)
-            Download = pd.read_csv("UPD_Dates_TapisC.csv")
-            # st.dataframe(Download, width=200, height=100)
-            st.dataframe(Download)
-            peta = pd.DataFrame({
-            "col1": 4.44658,
-            "col2": 113.97919,
-            "col3": np.random.randn(1000) * 100,
-            "col4": np.random.rand(1000, 4).tolist(),})
-        
-            st.map(peta,
-                latitude='col1',
-                longitude='col2',
-                size='col3',
-                color='col4')
+            
+            with col1.expander(f"Download {choose} prediction table"):
+                wellnameselect1 = pd.DataFrame(listwell2)
+                wellnameselect1_transposed = wellnameselect1.T  # or df1.transpose()
+                wellnameT = pd.DataFrame(wellnameselect1_transposed)
+                
+                
+                DF = pd.DataFrame()
+                for i in range (wellnameT.shape[1]):
+             
+                    data = wellnameselect1.iloc[i]
+                    L =data.str.split(" ", n=1)
+                    wellname = L[0]
+                    Dates = wellname[1].split("  ")
+                    mydf = {}
+                    mydf[wellname[0]]= Dates
+                    df = pd.DataFrame(mydf)
+                    DF = pd.concat([DF, df], sort = False, axis=1)
+                    
+                DF.reset_index(drop=True, inplace= True)
+                # st.dataframe(DF)
+                DF.to_csv("UPD_Dates_TapisC.csv", index=False)
+                Download = pd.read_csv("UPD_Dates_TapisC.csv")
+                # st.dataframe(Download, width=200, height=100)
+                st.dataframe(Download)
+                peta = pd.DataFrame({
+                "col1": 4.44658,
+                "col2": 113.97919,
+                "col3": np.random.randn(1000) * 100,
+                "col4": np.random.rand(1000, 4).tolist(),})
+            
+                st.map(peta,
+                    latitude='col1',
+                    longitude='col2',
+                    size='col3',
+                    color='col4')
         
             listdatepredict= bd_pred_final.groupby('Well').get_group(wellnameselecttapis)[["Date","Well","StatusUPD"]]
             filt = listdatepredict["StatusUPD"] == 0
