@@ -1,0 +1,24 @@
+PLATFORM,WELL,CODE,OPNS DATE,Category,"Primary 
+Cause","Secondary 
+Cause","Start Date & Time
+(dd-mm-yyyy hh-mm)","End Date & Time
+(dd-mm-yyyy hh-mm)",Problem Statement/Remarks,Status ,Way Forward Description,"Def. Rate 
+(kbd)",Monthlized Deferment after RF(Kb/d),Deferment after RF in Volume (kb)
+Bokor,BO-121L,UPD,27/12/2019 4:40,W,B ,O,27/12/2019 4:40,27/12/2019 6:00,BO-121L c/in due to SCSSV suspect closed,Open,To conduct cycling test,0.001,0.001,0.018
+Bokor,BO-102S,UPD,24/12/2021 21:00,W,B,O,24/12/2021 21:00,25/12/2021 13:40,BO-102S closed in due to SSSV suspected tripped.,Close,Well flowed back after found tripped.,0,0,0.006
+Bokor,BO-112L,UPD,4/2/2020 7:45,W,B,O,4/2/2020 7:45,4/2/2020 11:30,C/in BO-112L to troubleshoot on SCSSV (suspect not fully opened),Open,Plan to conduct RVC in March,0.005,0.005,0.158
+Bokor,BO-309T,UPD,7/3/2020 18:10,W,B,O,7/3/2020 18:10,8/3/2020 22:00,C/in BO-309T due to SCSSV tripped,Closed,"Flow back well once open SCSSV, plan to do SCSSV diagnostic test to confirm on SCSSV healthiness",0.001,0.001,0.026
+Bokor,BO-205L,UPD,13/5/2020 6:00,W,B,O,13/5/2020 6:00,16/5/2020 15:15,Difficulty to open up BO-205L SCSSV after c/in well for maintenance SD,Closed,Operations managed to open up SCSSV,0.031,0.031,0.967
+Bokor,BO-121S,UPD,17/6/2020 6:00,W,B,O,17/6/2020 6:00,28/6/2020 6:00,"BO-121S had difficulty in opening SCSSV, BO-205S unable to open due to SCSSV control line leak",Closed,Vendor mobbed to rectify on control line leak,0.05,0.05,1.486
+Bokor,BO-205C,UPD,17/6/2020 6:00,W,B,O,17/6/2020 6:00,29/6/2020 6:00,"BO-121S had difficulty in opening SCSSV, BO-205S unable to open due to SCSSV control line leak",Closed,Vendor mobbed to rectify on control line leak,0.05,0.05,1.486
+Bokor,BO-306T,UPD,17/6/2020 6:00,W,B,O,17/6/2020 6:00,1/7/2020 6:00,"BO-306T and BO-309T remain c/in. Suspected SCSSV hydraulic line leak
+",Open,Vendor mobbed to confirm on the issue,0.101,0.101,3.036
+Bokor,BO-309T,UPD,17/6/2020 6:00,,,,17/6/2020 6:00,1/7/2020 6:00,BO-306T and BO-309T remain c/in. Suspected SCSSV hydraulic line leak,,,,,
+Bokor,BO-312S,UPD,19/6/2020 6:00,,,,19/6/2020 6:00,1/7/2020 6:00,BO-312S remain c/in and to check on SCSSV healthiness,,,,,
+Bokor,BO-205S,UPD,11/6/2020 6:00,E,X,C,11/6/2020 6:00,17/6/2020 18:50,BO-205S: Unable to rectify SCSSV due to FCB limitation for social distancing,Closed,Vendor mobbed to rectify on control line leak after FCB resumed full capacity. ,0.027,0.027,0.811
+Bokor,BO-309T,UPD,1/7/2020 6:00,W,B,O,1/7/2020 6:00,23/7/2020 12:00,"C/in BO-309T due to SCSSV issue, BO-211L (1/7) due to SCSSV tripped and BO-215L (29/7) due to SSV tripped",Closed,Flow back well once SCSSV able to be opened. Long term solution for BO-309T requires TTESP to be retrieved,0.066,0.066,2.05
+Bokor,BO-211L,UPD,1/7/2020 6:00,,,,1/7/2020 6:00,23/7/2020 12:00,,,,,,
+Bokor,BO-215L,UPD,29/7/2020 6:00,,,,29/7/2020 6:00,,,,,,,
+Bokor,BO-215L,UPD,2/8/2020 6:00,W,B,O,2/8/2020 6:00,6/8/2020 18:00,BO-215L (2/8) and BO-213S (19/8) SSV and SCSSV tripped,Closed,Open up SSV and flow back well,0.021,0.021,0.639
+Bokor,BO-213S,UPD,2/8/2020 6:00,,,,2/8/2020 6:00,6/8/2020 18:00,,,,,,
+Bokor,BO-121S,UPD,25/11/2020 6:00,W,B,O,25/11/2020 6:00,26/11/2020 19:50,BO-121S quit due to SCSSV tripped,Closed,Open SCSSV and flow back well. Plan to conduct SCSSV cycling test,0.014,0.014,0.406

@@ -1,0 +1,68 @@
+PLATFORM,WELL,POTENTIAL (bbl/d),OPNS DATE,DOWNTIME,DESCRIPTION,CPL CODE,TYPE CODE,CAT CODE,PRIM CODE,SEC CODE,VOLUME (bbls),VOLUME (kbbl),VOLUME monthalized (kbd),ANNUALIZED VOLUME (kbd)
+Angsi,W-D-03,204.76,21-Mar-20,21,Unable to equalize ScSSV,I,U,O,T,N,179.17,0.18,#VALUE!,0
+Angsi,W-D-03,204.76,22-Mar-20,24,Unable to equalize ScSSV,I,U,O,T,N,204.76,0.2,0,0
+Angsi,W-D-03,204.76,23-Mar-20,24,Unable to equalize ScSSV,I,U,O,T,N,204.76,0.2,0.04,0
+Angsi,W-D-03,204.76,24-Mar-20,24,Unable to equalize ScSSV,I,U,O,T,N,204.76,0.2,0.04,0
+Angsi,W-D-03,204.76,25-Mar-20,24,Unable to equalize ScSSV,I,U,O,T,N,204.76,0.2,0.04,0
+Angsi,W-D-03,204.76,26-Mar-20,10.5,Unable to equalize ScSSV,I,U,O,T,N,89.58,0.09,0.04,0
+Angsi,W-E-05S,220,1-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,2-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,3-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,4-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,5-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,6-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,7-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,8-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,9-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,10-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,11-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,12-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,13-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,14-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,15-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,16-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,17-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,18-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,19-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,20-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,21-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,22-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,23-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,24-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,25-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,26-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,27-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,28-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,29-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,220,30-Jun-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,220,0.22,0.01,0
+Angsi,W-E-05S,150,1-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,2-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,3-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,4-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,5-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,6-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,7-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,8-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,9-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,10-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,11-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,12-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,13-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,14-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,15-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,16-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,17-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,18-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,19-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,20-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,21-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,22-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,23-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,24-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,25-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,26-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,27-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,28-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,29-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,30-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
+Angsi,W-E-05S,150,31-Jul-22,24,ScSSV unable to fully close; Not safe to flow under WRM.,I,U,S,A,C,150,0.15,0,0
