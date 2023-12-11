@@ -530,9 +530,9 @@ elif status == "Process Pi":
     if chooseP == "***Dulang***":
         selected_platform = "Dulang"
         
-        root_path = 'C:/Users/user/SCSSV/Dulang/UPD/'
+        #root_path = 'C:/Users/user/SCSSV/Dulang/UPD/'
         # , encoding='cp1252'
-        dfUPD = pd.read_csv(root_path + 'Latest Dulang UPD.csv', parse_dates=['OPNS DATE'] , encoding='cp1252')
+        dfUPD = pd.read_csv('Latest Dulang UPD.csv', parse_dates=['OPNS DATE'] , encoding='cp1252')
         dfUPD.rename(columns={'OPNS DATE':'Date'}, inplace= True)
 
         
