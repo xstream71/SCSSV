@@ -283,7 +283,7 @@ if status == "Visualisation":
            
             listdatepredict = listdatepredict[["Well","Date"]]
             predicttimes = filt.sum()
-            wellnameUPDnotinPI = pd.read_csv(root_path+'wellname_UPD_NOT_IN_PI_Dulang.csv' )
+            wellnameUPDnotinPI = pd.read_csv('wellname_UPD_NOT_IN_PI_Dulang.csv' )
             wellnameUPDnotinPI = wellnameUPDnotinPI['Well']
             wellnameUPDnotinPI.reset_index(drop=True, inplace= True)
             wellnameUPDnotinPI.index = np.arange(1, len(wellnameUPDnotinPI) + 1)
