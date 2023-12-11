@@ -351,8 +351,8 @@ if status == "Visualisation":
         listwell3 = []
         
         
-        root_path = 'C:/Users/user/SCSSV/'
-        bd_final = pd.read_csv(root_path +"bd_Final_TapisC.csv" )
+        #root_path = 'C:/Users/user/SCSSV/'
+        bd_final = pd.read_csv("bd_Final_TapisC.csv" )
         bd_pred_final = pd.read_csv("bd_Pred_TapisC.csv")
         # bd_pred_final["Date"] = pd.to_datetime(bd_pred_final["Date"])
         
