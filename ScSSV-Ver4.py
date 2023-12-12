@@ -256,6 +256,7 @@ if status == "Visualisation":
                 DF.to_csv("UPD_Dates_Dulang.csv", index=False)
                 Download = pd.read_csv("UPD_Dates_Dulang.csv")
                 # st.dataframe(Download, width=200, height=100)
+                st.write (f"{choose} OIL FIELD is located at South-East Asia, Riau Archipelago in Malaysia.")
                 st.dataframe(Download)
                 peta = pd.DataFrame({
                 "col1": 5.843641,
