@@ -119,12 +119,12 @@ def getUnPivotPI(df,colLabelPI,WellNameUPD):
 #         time.sleep(5)
 #     st.success("Done!")
 
-st.sidebar.image("petronas-logo.jpg",caption='Petroliam National Berhad',
+st.sidebar.image("petronas-logo.jpg",caption='Petroliam Nasional Berhad',
             use_column_width="auto")
 # st.sidebar.header("Platform CariGali 2023")
-st.sidebar.title("ScSSV Reliability")
+st.sidebar.title("Reliability Prediction :  Well Quit &  SCSSV")
 
-status = st.sidebar.radio("Select Menu", ["Visualisation", "Process Pi"], index=None)
+status = st.sidebar.radio("Select Menu", ["Visualisation", "Process New Data"], index=None)
 
 if status == "Visualisation":
     # st.markdown(f'<h1 style="color:#33ff33;font-size:24px;">{"ColorMeBlue text”"}</h1>', unsafe_allow_html=True)
