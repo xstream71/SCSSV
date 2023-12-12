@@ -371,7 +371,7 @@ if status == "Visualisation":
                 L.append(tarikh)
                 wellList[namaWell]=L
     
-        form2.write(wellList.keys())
+        #form2.write(wellList.keys())
         for wn in wellList.keys():
              textlist1 = wn + " " + listToString(wellList[wn])
              listwell2.append (textlist1)
