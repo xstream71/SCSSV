@@ -480,10 +480,10 @@ if status == "Visualisation":
             # wellnameUPDnotinPI.reset_index(drop=True, inplace= True)
             # wellnameUPDnotinPI.index = np.arange(1, len(wellnameUPDnotinPI) + 1)
             
-            form2.metric("Well Name", wellnameselecttapis, ":Accuracy 47.32%")
+            form2.metric("Well Name", wellnameselecttapis, ":Accuracy 57.32%")
             col2.write(f"Well Name {wellnameselecttapis} and found ***{predicttimes}*** UPD occurences ")
             with col2.expander("See explanation and table"):
-                st.write(f"The total UPD for well **{wellnameselecttapis}** is predicted to occurs = {predicttimes} .\n\nThe accuracy of 47.3%")
+                st.write(f"The total UPD for well **{wellnameselecttapis}** is predicted to occurs = {predicttimes} .\n\nThe accuracy of 57.32%")
             
         # df = bd_pred_Well.loc[filt]
                 st.write(f":blue[Table of {predicttimes} Predicted Date of UPD]")
