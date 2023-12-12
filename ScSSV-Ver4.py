@@ -258,8 +258,8 @@ if status == "Visualisation":
                 # st.dataframe(Download, width=200, height=100)
                 st.dataframe(Download)
                 peta = pd.DataFrame({
-                "col1": 4.44658,
-                "col2": 113.97919,
+                "col1": 5.843641,
+                "col2": 104.1361,
                 "col3": np.random.randn(1000) * 100,
                 "col4": np.random.rand(1000, 4).tolist(),})
             
