@@ -452,9 +452,10 @@ if status == "Visualisation":
                 Download = pd.read_csv("UPD_Dates_TapisC.csv")
                 # st.dataframe(Download, width=200, height=100)
                 st.dataframe(Download)
+                st.write (f"{choose} OIL FIELD is located at Terengganu in Malaysia.")
                 peta = pd.DataFrame({
-                "col1": 4.44658,
-                "col2": 113.97919,
+                "col1": 3.140853,
+                "col2": 101.693207,
                 "col3": np.random.randn(1000) * 100,
                 "col4": np.random.rand(1000, 4).tolist(),})
             
