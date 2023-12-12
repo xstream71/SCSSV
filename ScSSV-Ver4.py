@@ -454,8 +454,8 @@ if status == "Visualisation":
                 st.dataframe(Download)
                 st.write (f"{choose} OIL FIELD is located at Terengganu in Malaysia.")
                 peta = pd.DataFrame({
-                "col1": 3.140853,
-                "col2": 101.693207,
+                "col1": 5.52194,
+                "col2": 104.9825,
                 "col3": np.random.randn(1000) * 100,
                 "col4": np.random.rand(1000, 4).tolist(),})
             
