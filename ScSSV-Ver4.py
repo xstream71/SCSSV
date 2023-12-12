@@ -491,7 +491,7 @@ if status == "Visualisation":
                 # st.write(f":blue[Table of {choose} Well Name UPD not in PI]")
                 # st.write(wellnameUPDnotinPI)
 
-elif status == "Process Pi":
+elif status == "Process New Data":
     st.sidebar.title('Process PI')
 
     tab1, tab2 = st.sidebar.tabs(["Carigali", "Exxon"])
