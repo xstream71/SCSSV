@@ -163,8 +163,8 @@ if status == "Visualisation":
         listwell3 = []
         
        
-        root_path = 'C:/Users/user/SCSSV/'
-        bd_final = pd.read_csv(root_path +"bd_Final_Dulang.csv" )
+        #root_path = 'C:/Users/user/SCSSV/'
+        bd_final = pd.read_csv("bd_Final_Dulang.csv" )
         bd_pred_final = pd.read_csv("bd_pred_final_dulang.csv")
     
     
