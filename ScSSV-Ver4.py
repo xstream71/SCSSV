@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-#import openpyxl
-#import plotly.figure_factory as ff
+import openpyxl
+import plotly.figure_factory as ff
 import os
 # from tqdm import tqdm  # progress bar is activated when there is a loop
 # from tqdm import tqdm_gui
@@ -164,8 +164,8 @@ if status == "Visualisation":
         listwell3 = []
         
        
-        #root_path = 'C:/Users/user/SCSSV/'
-        bd_final = pd.read_csv("bd_Final_Dulang.csv" )
+        root_path = 'C:/Users/user/SCSSV/'
+        bd_final = pd.read_csv(root_path +"bd_Final_Dulang.csv" )
         bd_pred_final = pd.read_csv("bd_pred_final_dulang.csv")
     
     
@@ -200,7 +200,7 @@ if status == "Visualisation":
         
         # wellnameselect,predicttimes = wellnameselect.split(" ")
         
-        days = form2.slider("Choose Forecasting Horizon", 1, 180,60)
+        days = form2.slider("Choose Forecasting Horizon", 1, 300,60)
         buttonselect_dulang = form2.form_submit_button("Display")
         
     
@@ -284,7 +284,7 @@ if status == "Visualisation":
            
             listdatepredict = listdatepredict[["Well","Date"]]
             predicttimes = filt.sum()
-            wellnameUPDnotinPI = pd.read_csv('wellname_UPD_NOT_IN_PI_Dulang.csv' )
+            wellnameUPDnotinPI = pd.read_csv(root_path+'wellname_UPD_NOT_IN_PI_Dulang.csv' )
             wellnameUPDnotinPI = wellnameUPDnotinPI['Well']
             wellnameUPDnotinPI.reset_index(drop=True, inplace= True)
             wellnameUPDnotinPI.index = np.arange(1, len(wellnameUPDnotinPI) + 1)
@@ -352,8 +352,8 @@ if status == "Visualisation":
         listwell3 = []
         
         
-        #root_path = 'C:/Users/user/SCSSV/'
-        bd_final = pd.read_csv("bd_Final_TapisC.csv" )
+        root_path = 'C:/Users/user/SCSSV/'
+        bd_final = pd.read_csv(root_path +"bd_Final_TapisC.csv" )
         bd_pred_final = pd.read_csv("bd_Pred_TapisC.csv")
         # bd_pred_final["Date"] = pd.to_datetime(bd_pred_final["Date"])
         
@@ -372,10 +372,12 @@ if status == "Visualisation":
                 L.append(tarikh)
                 wellList[namaWell]=L
     
-        #form2.write(wellList.keys())
+        # form2.write(wellList.keys())
         for wn in wellList.keys():
-             textlist1 = wn + " " + listToString(wellList[wn])
-             listwell2.append (textlist1)
+            textlist1 = wn + " " + listToString(wellList[wn])
+            # textlist1 = wn + " " + ",".join(
+            # found = found + 1
+            listwell2.append (textlist1)
             
         #     listwell2.insert (0,textlist1)
         
@@ -395,7 +397,6 @@ if status == "Visualisation":
         
         buttonselect_tapis = form2.form_submit_button("Display")
         
-
         
 
         if buttonselect_tapis:
@@ -427,7 +428,7 @@ if status == "Visualisation":
             form2.line_chart( bd_pred_pi[['THP','THT','PCP','Date']], x ='Date', y=['THP','THT','PCP'])
             form2.write(f" :blue[UPD Data for {wellnameselecttapis}]")
             form2.line_chart(date_selection2[['Date','StatusUPD']], x ='Date', y=['StatusUPD'], color="#38B09D")
-            
+        
             with col1.expander(f"Download {choose} prediction table"):
                 wellnameselect1 = pd.DataFrame(listwell2)
                 wellnameselect1_transposed = wellnameselect1.T  # or df1.transpose()
@@ -452,10 +453,9 @@ if status == "Visualisation":
                 Download = pd.read_csv("UPD_Dates_TapisC.csv")
                 # st.dataframe(Download, width=200, height=100)
                 st.dataframe(Download)
-                st.write (f"{choose} OIL FIELD is located at Terengganu in Malaysia.")
                 peta = pd.DataFrame({
-                "col1": 5.52194,
-                "col2": 104.9825,
+                "col1": 4.44658,
+                "col2": 113.97919,
                 "col3": np.random.randn(1000) * 100,
                 "col4": np.random.rand(1000, 4).tolist(),})
             
@@ -464,7 +464,7 @@ if status == "Visualisation":
                     longitude='col2',
                     size='col3',
                     color='col4')
-        
+                
             listdatepredict= bd_pred_final.groupby('Well').get_group(wellnameselecttapis)[["Date","Well","StatusUPD"]]
             filt = listdatepredict["StatusUPD"] == 0
             listdatepredict = listdatepredict.loc[filt]
@@ -482,10 +482,10 @@ if status == "Visualisation":
             # wellnameUPDnotinPI.reset_index(drop=True, inplace= True)
             # wellnameUPDnotinPI.index = np.arange(1, len(wellnameUPDnotinPI) + 1)
             
-            form2.metric("Well Name", wellnameselecttapis, ":Accuracy 57.32%")
+            form2.metric("Well Name", wellnameselecttapis, ":Accuracy 57.323%")
             col2.write(f"Well Name {wellnameselecttapis} and found ***{predicttimes}*** UPD occurences ")
             with col2.expander("See explanation and table"):
-                st.write(f"The total UPD for well **{wellnameselecttapis}** is predicted to occurs = {predicttimes} .\n\nThe accuracy of 57.32%")
+                st.write(f"The total UPD for well **{wellnameselecttapis}** is predicted to occurs = {predicttimes} .\n\nThe accuracy of 57.323%")
             
         # df = bd_pred_Well.loc[filt]
                 st.write(f":blue[Table of {predicttimes} Predicted Date of UPD]")
@@ -532,11 +532,11 @@ elif status == "Process New Data":
     if chooseP == "***Dulang***":
         selected_platform = "Dulang"
         
-        #root_path = 'C:/Users/user/SCSSV/Dulang/UPD/'
+        root_path = 'C:/Users/user/SCSSV/Dulang/UPD/'
         # , encoding='cp1252'
-        dfUPD = pd.read_csv('Latest Dulang UPD.csv', parse_dates=['OPNS DATE'] , encoding='cp1252')
+        dfUPD = pd.read_csv(root_path + 'Latest Dulang UPD2jan2024.csv', parse_dates=['OPNS DATE'] , encoding='cp1252')
         dfUPD.rename(columns={'OPNS DATE':'Date'}, inplace= True)
-
+        
         
         buttonselect_dulang = form2.form_submit_button(f"Process PI and UPD {chooseP}")
         buttonselect_dulangpredit = form3.form_submit_button(f"Process Prediction for {chooseP}")
@@ -547,10 +547,10 @@ elif status == "Process New Data":
             dfUPD_Accepted, WellNameUPD, Freq = getUPD_Accepted(dfUPD, 'WELL',1)
             newNames={
             "W-B-32S01L":["W-B-32S"],
-            "W-C-25W01S":["W-C-25"],
+            "W-C-25W01S":["W-C-25S"],#["W-C-25"],
             "W-D-12S01":["W-D-12S"],
-            "W-D-21S01":["W-D-21S"],
-            "W-C-22S02":["W-C-22S"],
+            "W-D-21S01":["W-D-21"],#["W-D-21S"],
+            "W-C-22S02":["W-C-22"], #["W-C-22S"],
             "W-D-13S01":["W-D-13S"],
             "W-C-03S01":["W-C-03S"],
             "W-B-28S02S":["W-B-28S"],
@@ -560,19 +560,19 @@ elif status == "Process New Data":
             "W-A-08S01":["W-A-08S"],
             "W-A-15S20":["W-A-15S"],
             "W-D-26S01S":["W-D-26S"],
-            "W-D-20H01":["W-D-20H"],
+            "W-D-20H01":["W-D-20L"],#["W-D-20H"],
             "W-C-19S02S":["W-C-19S"],
             "W-D-07S01L":["W-D-07S"],
             "W-B-32S01S":["W-B-32S"],
-            "W-C-25W01L":["W-C-25"],
-            "W-D-02S01":["W-D-02S"],
-            "W-D-19H01L":["W-D-19"],
-            "W-A-28S01":["W-A-28S"],
+            "W-C-25W01L":["W-C-25L"],#["W-C-25"],
+            "W-D-02S01":["W-D-02"],#["W-D-02S"],
+            "W-D-19H01L":["W-D-19L"],#["W-D-19"],
+            "W-A-28S01":["W-A-28"],#["W-A-28S"],
             "W-A-01W01":["W-A-01"],
             "W-B-17S03L":["W-B-17S"],
-            "W-A-12S01":["W-A-12S"],
+            "W-A-12S01":["W-A-12"],#["W-A-12S"],
             "W-C-04S01L":["W-C-04S"],
-            'W-B-24S02':['W-B-24S'],
+            'W-B-24S02':['W-B-24'],#['W-B-24S'],
             'W-B-28S02':['W-B-28S'],
             'W-B-28S02L':['W-B-28S']
             }
@@ -583,13 +583,13 @@ elif status == "Process New Data":
             #Changes weird well names
             #=========================
             # ctr = 0
-            print(f"Changing Weird well Names:")
+            # form2.write(f"Changing Weird well Names:")
             for wn in WellNameUPD:
                 if wn in newNames.keys(): # and ctr<=1:
-                    print(wn, "-->", newNames[wn],end = ",   ")
+                    form2.write(wn, "-->", newNames[wn],end = ",   ")
                     filt = (dfUPD_Accepted['WELL']==wn)
                     dfUPD_Accepted.loc[filt,['WELL']]=newNames[wn]
-            
+            form2.write(f"Changing Weird well Names Done!!")
             dfUPD_Accepted, WellNameUPD, Freq = getUPD_Accepted(dfUPD_Accepted, 'WELL', minCount = 5)
             # dfUPD_Accepted
             # dfUPD_Accepted['WELL'].value_counts()
@@ -617,7 +617,7 @@ elif status == "Process New Data":
                                 sheetnames.pop()
                                 excelData = {}
                                 for sht in sheetnames:  #[THP, THT, PCP]
-                                    print(f"{sht} --> READING....")
+                                    # form2.write(f"{sht} --> READING....")
                                     df, colLabelPI = getPredictorLabel(sht, excl)
                                     dfUnpiv = getUnPivotPI(df,colLabelPI,WellNameUPD)
                                     if 'THP' in sht:
@@ -630,7 +630,7 @@ elif status == "Process New Data":
                                         pass
                                     # excelData[colLabelPI]=dfUnpiv
                                     # excelData = pd.read_excel(full_path_PI_Dulang, sheet_name=sht)
-                                    print(f"{sht} --> DONE")
+                                    # form2.write(f"{sht} --> DONE")
                             excelTHP.reset_index(drop=True)
                             excelTHT.reset_index(drop=True)
                             excelPCP.reset_index(drop=True)
@@ -805,7 +805,7 @@ elif status == "Process New Data":
             fh_setup = 3
             fold_setup = 3
             
-            fh_required = 180 + fh_setup  # 180    #<--  Pejal get from listbox/text box (from the user)
+            fh_required = 300 + fh_setup  # 180    #<--  Pejal get from listbox/text box (from the user)
            
             # for wn in WellName_Dulang[:1]: #len(wellName_Dulang)+1]:
             mybar=form3.progress(0, text=f"Creating Forecasting data for {chooseP} in progress...please wait :hourglass_flowing_sand:")
